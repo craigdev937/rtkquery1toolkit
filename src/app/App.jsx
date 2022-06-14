@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { Main } from "../routes/Main";
 
 export const App = () => {
     return (
-        <React.Fragment>
-            <h1>App</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur asperiores reiciendis beatae voluptatibus optio soluta minima neque dicta nulla ad mollitia, blanditiis commodi. Repellat, deserunt molestias. Enim doloremque illum error?</p>
-        </React.Fragment>
+        <BrowserRouter>
+            <React.Fragment>
+                <Main />
+            </React.Fragment>
+        </BrowserRouter>
     );
 };
 
